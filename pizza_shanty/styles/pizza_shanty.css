@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+    color: darkred;
+}
+
+.content {
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+}
+
+article {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    block-size: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 50%;
+
+    text-align: center;
+}
+
+label {
+    border: 1px  black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+

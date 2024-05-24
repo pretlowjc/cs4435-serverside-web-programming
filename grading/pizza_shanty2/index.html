@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pizza Shanty</title>
+	<link rel="stylesheet" href='./styles/pizza_shanty.css'>
+	<script src='./scripts/pizza_shanty.js'></script>
+</head>
+
+<body>
+
+	<h1>Welcome to the Pizza Shanty!
+	<img src='./images/logo.png' id = "cornerlogo" alt="A small logo of a pizza slice">
+	</h1> 
+	
+	<h4>Please select your toppings and pizza style below</h4>
+	
+	<hr>
+	<br>
+	
+	<article id = "cheese_article">
+		<form id = "Cheese">
+			<label> Extra Cheese 
+			<input type = "checkbox" id = "extracheese" name ="extracheese" onclick="checkcheese()">
+			</label>
+			
+		</form>
+	</article>
+	
+	<article id = "topping_article">
+		<form id = "Toppings">
+			<label> Toppings: </label>
+			<input type = "text" disabled="disabled" value = 0 size = 5>
+			<button type = "button" form = "Toppings" onclick="updateTopping(0)"> 0 </button>
+			<button type = "button" form = "Toppings" onclick="updateTopping(1)"> 1 </button>
+			<button type = "button" form = "Toppings" onclick="updateTopping(2)"> 2 </button>
+			<button type = "button" form = "Toppings" onclick="updateTopping(3)"> 3 </button>
+		</form>
+	</article>
+	
+	<article id = "size_article">
+		<form id = "Size">
+			<label> Size: </label>
+			<input type = "text" disabled="disabled" value = "S" size = 5>
+			<button type = "button" form = "Toppings" onclick="updateSize('S', 10)" > Small </button>
+			<button type = "button" form = "Toppings" onclick="updateSize('M', 12)" > Medium </button>
+			<button type = "button" form = "Toppings" onclick="updateSize('L', 14)"> Large </button>
+			<button type = "button" form = "Toppings" onclick="updateSize('G', 18)"> Giant </button>
+		</form>
+	</article>
+	
+	<article id = "crust_article">
+		<form id = "Crust">
+			<label> Crust Type: </label>
+			<input type = "text" disabled="disabled" value = "Thin" size = 5>
+			<button type = "button" form = "Toppings" onclick="updateCrust('Thin', 0)"> Thin </button>
+			<button type = "button" form = "Toppings" onclick="updateCrust('Pan', 0)"> Pan </button>
+			<button type = "button" form = "Toppings" onclick="updateCrust('Stuffed', 1)"> Stuffed </button>
+			<button type = "button" form = "Toppings" onclick="updateCrust('Square', 0.5)"> Square </button>
+		</form>
+	</article>
+	
+	<article id = "tip_article">
+		<form id = "Tip">
+			<label> Add a tip: </label>
+			<input type = "text" value = "$0.00" size = 5 oninput="addTip()">
+			<button type = "button" form = "Tip" onclick="clearTip()"> Clear tip </button>
+		</form>
+	</article>
+	
+	<article id = "total_article">
+		<form id = "Total">
+			<label>Total:</label>
+			<input type = "text" disabled = "disabled" value = "$10.00" size = 5>
+			<button type = "button" form = "Total" onclick="clearTotal()"> Reset Options</button>
+		</form>
+	</article>
+</body>

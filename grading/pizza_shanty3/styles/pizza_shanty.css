@@ -1,0 +1,7 @@
+body {
+    background-image: url("../images/pizza-background.jpg");
+}
+
+h1, h2, h3, p, hr {
+    color : white
+}

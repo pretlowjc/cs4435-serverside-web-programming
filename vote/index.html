@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Vote For Your Favorite Aircraft</title>
+		<link rel="stylesheet" href="vote.css" />
+	</head>
+
+	<body>
+		<form action="vote.php" get="GET">
+			<hr />
+			<table>
+				<td>
+					<label for="f22">
+						<input
+							type="radio"
+							id="f22"
+							name="choice"
+							value="f22"
+						/>
+						<img src="../images/f22.jpg" />
+					</label>
+				</td>
+				<td>
+					<label for="f35">
+						<input
+							type="radio"
+							id="f35"
+							name="choice"
+							value="f35"
+						/>
+						<img src="../images/f35.jpg" />
+					</label>
+				</td>
+				<td>
+					<label for="j20">
+						<input
+							type="radio"
+							id="j20"
+							name="choice"
+							value="j20"
+						/>
+						<img src="../images/j20.jpg" />
+					</label>
+				</td>
+				<td>
+					<label for="su57">
+						<input
+							type="radio"
+							id="su57"
+							name="choice"
+							value="su57"
+						/>
+						<img src="../images/su57.jpg" />
+					</label>
+				</td>
+			</table>
+			<hr />
+			<input id="button" type="submit" value="Cast Vote" />
+		</form>
+	</body>
+</html>

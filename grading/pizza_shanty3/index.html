@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza Shanty Order</title>
+        <script defer src="scripts/pizza_shanty.js"></script>
+        <link rel="stylesheet" href="styles/pizza_shanty.css">
+    </head>
+    <body>
+        <h1>Pizza Shanty</h1>
+        <hr>
+
+        <h2>Order your pizza here!</h2>
+        
+        <h3># of Toppings</h3>
+        <select name="toppings" id="toppings" class="Order">
+            <option value="0">0 (0)</option>
+            <option value="1">1 (+1)</option>
+            <option value="2">2 (+2)</option>
+            <option value="3">3 (+3)</option>
+            <option value="4">4 (+4)</option>
+            <option value="5">5 (+5)</option>
+            <option value="6">6 (+6) (Dang that a lot of toppings)</option>
+            <option value="7">7 (+7) (Dang even more toppings)</option>
+            <option value="8">8 (+8) (Bro you need some help)</option>
+            <option value="9">9 (+9) (Stop adding more)</option>
+            <option value="10">10 (+10) (I don't even care at this point)</option>
+            
+        </select>
+
+        <h3>Crust Size</h3>
+        <select name="crustSize" id="crustSize" class="Order">
+            <option value="10">Small ($10)</option>
+            <option value="12">Medium ($12)</option>
+            <option value="14">Large ($14)</option>
+            <option value="18">Giant ($18)</option>
+        </select>
+
+        <h3>Crust Type</h3>
+        <select name="crustType" id="crustType" class="Order">
+            <option value="0">Thin</option>
+            <option value="0">Pan</option>
+            <option value="1">Stuffed (+$1.00)</option>
+            <option value=".50">Square (+$0.50)</option>
+        </select>
+
+        <h3>Extra Cheese</h3>
+        <select name="extraCheese" id="extraCheese" class="Order">
+            <option value = "1.40">Extra Cheese (+$1.40)</option>
+            <option value="0">No Extra Cheese</option>
+        </select>
+        <br>
+        <br>
+        <h3>Tip Percentage</h3>
+        <select name = "tip" id ="tip">
+            <option value="1.30">30%</option>
+            <option value="1.25">25%</option>
+            <option value="1.20">20%</option>
+            <option value="1.18">18%</option>
+            <option value="1.15">15%</option>
+            <option value="1.10">10%</option>
+            <option value="1.01">1% (Why you tipping at all?)</option>
+            <option value="1.00">0% (Why are you not tipping?)</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="button" onclick="clear();" value="Clear">
+        <input type="button" onclick="total();" value="Submit Order">
+        <p id="total"></p>
+    
+    </body>
+</html>

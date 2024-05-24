@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizza Shanty Order</title>
+    <script defer src="scripts/pizza_shanty.js"></script>
+    <link rel="stylesheet" href="styles/pizza_shanty.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Pizza Shanty</h1>
+    <hr>
+
+    <h2>"Because sometimes, you just knead pizza!"</h2>
+    <hr class="my-subheader-line">
+    <h3># Toppings</h3>
+    <select name="toppings" id="toppings" class="Order">
+      <option value="0">Click to Add Toppings</option>
+      <option value="0">None</option>
+      <option value="1">1 (+1$)</option>
+      <option value="2">2 (+2$)</option>
+      <option value="3">3 (+3$)</option>
+      <option value="4">4 (+4$)</option>
+      <option value="5">5 (+5$)</option>
+    </select>
+    <hr class="my-line">
+    <h3>Crust Size</h3>
+    <select name="crustSize" id="crustSize" class="Order">
+      <option value="0">Click to Choose Crust Size</option>
+      <option value="10">Small ($10)</option>
+      <option value="12">Medium ($12)</option>
+      <option value="14">Large ($14)</option>
+      <option value="18">Giant ($18)</option>
+    </select>
+    <hr class="my-line">
+    <h3>Crust Type</h3>
+    <select name="crustType" id="crustType" class="Order">
+      <option value="0">Click to Choose Crust Type</option>
+      <option value="0">Thin</option>
+      <option value="0">Pan</option>
+      <option value="1">Stuffed (+$1.00)</option>
+      <option value=".50">Square (+$0.50)</option>
+    </select>
+    <hr class="my-line">
+    <h3>Extra Cheese</h3>
+    <select name="extraCheese" id="extraCheese" class="Order">
+      <option value="0">No Extra Cheese</option>
+      <option value="1.40">Extra Cheese (+$1.40)</option>
+    </select>
+    <hr class="my-line">
+    <h3>Tip Percentage</h3>
+    <select name="tip" id="tip">
+        <option value="0.00">0%</option>
+        <option value="0.01">1%</option>
+        <option value="0.10">10%</option>
+        <option value="0.15">15%</option>
+        <option value="0.18">18%</option>
+        <option value="0.20">20%</option>
+        <option value="0.25">25%</option>
+      </select>
+    <hr class="my-line">
+    <input type="button" onclick="resetForm();" value="Clear" />
+    <input type="button" onclick="total();" value="Submit Order" />
+    <p id="total"></p>
+  </body>
+</html>

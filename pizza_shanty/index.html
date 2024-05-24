@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Shanty Order Form</title>
+    <link rel="stylesheet" href="../pizza_shanty/styles/pizza_shanty.css">
+    <script defer src="../pizza_shanty/scripts/jquery-3.6.1.min.js"></script>
+    <script defer src="../pizza_shanty/scripts/pizza_shanty.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Pizza Shanty</h1>
+        </header>
+
+        <hr>
+
+        <div class="content">
+            <article>
+                <h2>Toppings</h2>
+                <label for="zero">0
+                    <input type="radio" id="zero" name="toppings" value="0" checked>
+                </label>
+                <label for="one">1
+                    <input type="radio" id="one" name="toppings" value="1">
+                </label>
+                <label for="two">2
+                    <input type="radio" id="two" name="toppings" value="2">
+                </label>
+                <label for="three">3
+                    <input type="radio" id="three" name="toppings" value="3">
+                </label>
+            </article>
+
+            <article>
+                <h2>Crust Size</h2>
+                <label for="small">Small
+                    <input type="radio" id="small" name="size" value="Small" checked>
+                </label>
+
+                <label for="medium">Medium
+                    <input type="radio" id="medium" name="size" value="Medium">
+                </label>
+
+                <label for="large">Large
+                    <input type="radio" id="large" name="size" value="Large">
+                </label>
+
+                <label for="giant">Giant
+                    <input type="radio" id="giant" name="size" value="Giant">
+                </label>
+            </article>
+
+            <article>
+                <h2>Crust Type</h2>
+                <label for="thin">
+                    <img src="../pizza_shanty/images/thinc" alt="Thin">
+                    <input type="radio" id="thin" name="crust_type" value="Thin" checked>
+                </label>
+
+                <label for="pan">
+                    <img src="../pizza_shanty/images/pancrust.png" alt="Pan">
+                    <input type="radio" id="pan" name="crust_type" value="pan">
+                </label>
+
+                <label for="stuffed">
+                    <img src="../pizza_shanty/images/squarecrust.png" alt="Stuffed">
+                    <input type="radio" id="stuffed" name="crust_type" value="stuffed">
+                </label>
+
+                <label for="square">
+                    <img src="../pizza_shanty/images/squarecrust.png" alt="Square">
+                    <input type="radio" id="square" name="crust_type" value="Square">
+                </label>
+            </article>
+
+            <article>
+                <h2>Cheese</h2>
+                <label for="regular">Regular
+                    <input type="radio" id="regular" name="cheese_amount" value="Regular" checked>
+                </label>
+                <label for="extra">Extra
+                    <input type="radio" id="extra" name="cheese_amount" value="Extra">
+                </label>
+            </article>
+
+            <article>
+                <h2>Total</h2>
+                <div class="button_container">
+                    <p id="top-list"></p>
+                    <p id="crust-list"></p>
+                    <p id="size-list"></p>
+                    <p id="cheese-list"></p>
+                    <button class="buttons" onclick="clear()">Clear</button>
+                    <button class="buttons"  onclick="numToppings(), typeCrust(), sizeCrust(), cheesyness()">
+                            Total</button>
+                    <p id="total"></p>
+                </div>
+            </article>
+        </div>
+
+    </div>
+</body>
+
+</html>
